@@ -13,8 +13,8 @@ function App() {
   const handleSubmit = async () => {
     try {
       const url = isLogin
-        ? "https://fullstack-login-check-sample.onrender.com"
-        : "https://fullstack-login-check-sample.onrender.com";
+        ? "https://fullstack-login-check-sample.onrender.com/login"
+        : "https://fullstack-login-check-sample.onrender.com/register";
 
       const payload = isLogin
         ? { email: form.email, password: form.password }
