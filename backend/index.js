@@ -10,8 +10,7 @@ app.use(express.json());
 app.use(cors());
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://Jesvanth:<abc123>@cluster0.mtuz9dr.mongodb.net/?appName=Cluster0')
-  .then(() => console.log('MongoDB Connected!'))
+mongoose.connect(process.env.MONGO_URI)  .then(() => console.log('MongoDB Connected!'))
   .catch(err => console.log(err));
 
 // User Model
