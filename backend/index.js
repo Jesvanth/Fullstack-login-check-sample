@@ -10,7 +10,7 @@ app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
 // Connect to MongoDB
-mongoose.connect('mongodb+srv://Jesvanth:abc123@cluster0.mtuz9dr.mongodb.net/authapp?appName=Cluster0')  
+mongoose.connect('mongodb+srv://Jesvanth:Test1234@cluster0.mtuz9dr.mongodb.net/authapp?appName=Cluster0')  
 .then(() => console.log('MongoDB Connected!'))
 .catch(err => console.log('MongoDB Error:', err));
 
